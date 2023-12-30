@@ -1,0 +1,25 @@
+.minicard--div {
+  /* padding: 1rem 5rem; */
+  display: flex;
+  justify-content: center;
+
+  .minicard--wrapper {
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+
+    .minicard {
+      height: 5.55rem;
+      width: 5.35rem;
+      border-radius: 0.8rem;
+      cursor: pointer;
+    }
+    .minicard-font {
+      font-size: 12px;
+      color: #4f5763;
+      margin-top: 0.4rem;
+      font-weight: 400;
+      cursor: pointer;
+    }
+  }
+}

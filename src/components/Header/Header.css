@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  /* height: 8rem; */
+  border: 1px solid black;
+
+  .offer {
+    display: flex;
+    justify-content: center;
+    background-color: #ffc303;
+    padding: 0.6rem 0;
+    /* height: 2rem; */
+
+    .offer-text {
+      display: flex;
+      align-items: center;
+    }
+  }
+  .navbar {
+    /* height: 6rem; */
+    display: flex;
+    padding: 1rem 2rem;
+    align-items: center;
+    justify-content: space-between;
+
+    .navbar--left {
+      display: flex;
+      gap: 2rem;
+    }
+    .navbar--right {
+      display: flex;
+      gap: 2rem;
+    }
+  }
+}
