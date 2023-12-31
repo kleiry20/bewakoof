@@ -10,6 +10,13 @@ import CategoryCard, {
 
 // assets
 import TeeShirt from "/src/assets/tee-shirts.png";
+import Shirts from "/src/assets/shirts.png";
+import Pajamas from "./assets/pajamas.png";
+import Boxers from "./assets/boxers.png";
+import Coords from "./assets/co-ords.png";
+import FullSleeves from "./assets/full-sleeves.png";
+import Shorts from "./assets/shorts.png";
+import Joggers from "./assets/joggers.png";
 
 function App() {
   const [isOffer] = useState(true);
@@ -44,6 +51,45 @@ function App() {
       title: "Tee Shirts",
     },
   ];
+
+  const categories = {
+    list1: [
+      {
+        type: "Shirts",
+        image: Shirts,
+      },
+      {
+        type: "Pajamas",
+        image: Pajamas,
+      },
+      {
+        type: "Boxers",
+        image: Boxers,
+      },
+      {
+        type: "Co-ords",
+        image: Coords,
+      },
+    ],
+    list2: [
+      {
+        type: "Full Sleeves",
+        image: FullSleeves,
+      },
+      {
+        type: "Tee Shirts",
+        image: TeeShirt,
+      },
+      {
+        type: "Shorts",
+        image: Shorts,
+      },
+      {
+        type: "Joggers",
+        image: Joggers,
+      },
+    ],
+  };
 
   return (
     <>
@@ -85,7 +131,7 @@ function App() {
           </section>
 
           <section className="section-3">
-            <h3 className="h3-font-style">Trending Categories</h3>
+            <h3 className="h3-font-style">Trending Categories 🔥</h3>
             <p className="p-14">
               Stay ahead of the fashion game with these hot trends to try!
             </p>
@@ -95,9 +141,7 @@ function App() {
                   <CategoryCardMedium />
                 </div>
                 <div>
-                  {smallCardData.map((smallCardData) => {
-                    return <CategoryCardSmall smallCardData={smallCardData} />;
-                  })}
+                  <CategoryCardSmall smallCardData={smallCardData} />
                   {/* <CategoryCardSmall smallCardData={smallCardData} /> */}
                 </div>
               </div>
@@ -124,14 +168,65 @@ function App() {
           <section className="section-4">
             <h3 className="h3-font-style">Too hot to be missed</h3>
             <div className="section-4--div">
-              <div className="section-4--child">1</div>
-              <div className="section-4--child">2</div>
+              <div
+                className="section-4--child"
+                style={{
+                  backgroundImage:
+                    'url("https://images.bewakoof.com/uploads/grid/app/Customise-Desktop-midsize-Banner-1699360277.jpg")',
+                }}
+              ></div>
+              <div
+                className="section-4--child"
+                style={{
+                  backgroundImage:
+                    'url("https://images.bewakoof.com/uploads/grid/app/Plus-Size-Desktop-midsize-Banner--1--1699360278.jpg")',
+                }}
+              ></div>
+            </div>
+          </section>
+
+          <section className="section-5">
+            <h3 className="h3-font-style">Categories to bag</h3>
+            <div className="section-5--wrapper">
+              <div className="section-5--row">
+                {categories.list1.map((item) => {
+                  return (
+                    <div className="section-5--child">
+                      <div
+                        className="section-5--img"
+                        style={{ backgroundImage: `url("${item.image}")` }}
+                      ></div>
+                      <p className="p-12" style={{ marginTop: "0.4rem" }}>
+                        {item.type}
+                      </p>
+                    </div>
+                  );
+                })}
+              </div>
+              <div className="section-5--row">
+                {categories.list2.map((item) => {
+                  return (
+                    <div className="section-5--child">
+                      <div
+                        className="section-5--img"
+                        style={{ backgroundImage: `url("${item.image}")` }}
+                      ></div>
+                      <p className="p-12" style={{ marginTop: "0.4rem" }}>
+                        {item.type}
+                      </p>
+                    </div>
+                  );
+                })}
+              </div>
             </div>
           </section>
         </div>
       </div>
 
-      <section className="footer">footer</section>
+      <section className="footer">
+        <section className="footer--top">top</section>
+        <section className="footer--bottom">botto</section>
+      </section>
     </>
   );
 }

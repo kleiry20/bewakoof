@@ -45,17 +45,15 @@ export const CategoryCardSmall = (props: any) => {
   const item = Object.values(props);
   return (
     <>
-      {/* {props.smallCardData.map((item: any) => {
-        return (
-          <div
-            className="category-card--small"
-            style={{ backgroundImage: `url("${item.image}")` }}
-          >
-            <button className="btn-white">{item.title}</button>
-          </div>
-        );
-      })} */}
-      
+   
+        <div
+        className="category-card--small"
+        style={{ backgroundImage: `url("${props.image}")` }}
+        >
+        <button className="btn-white">{props.title}</button>
+        </div>
+    
+
       {/* {Object.entries(items).map(([key, value]) => {
         return (
           <div

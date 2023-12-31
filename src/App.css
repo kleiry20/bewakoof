@@ -3,6 +3,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
+  padding: 0;
 }
 p {
   margin: 0;
@@ -33,12 +34,20 @@ ul {
   font-weight: 400;
 }
 
+/* global colors */
+:root {
+  --blue: rgb(232, 243, 243);
+  --gray: rgb(73, 75, 80);
+}
+
 /* app section styles */
 .parent-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* remove later */
+  margin-bottom: 40px;
 
   .container {
     width: 90vw;
@@ -109,12 +118,45 @@ ul {
 
       .section-4--div {
         display: flex;
-        justify-content: space-between;
-
+        gap: 1rem;
+        justify-content: center;
         .section-4--child {
-          height: 10rem;
-          width: 15rem;
-          border: 1px solid brown;
+          height: 22rem;
+          width: 39rem;
+          border-radius: 0.8rem;
+          /* border: 1px solid brown; */
+          background-size: cover;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .section-5 {
+      padding: 1rem 5rem;
+      text-align: center;
+      width: 100%;
+
+      .section-5--wrapper {
+        display: flex;
+        flex-direction: column;
+
+        .section-5--row {
+          display: flex;
+          justify-content: center;
+          gap: 1rem;
+
+          .section-5--child {
+            height: 18rem;
+            width: 16rem;
+            cursor: pointer;
+
+            .section-5--img {
+              height: 16rem;
+              width: 16rem;
+              background-size: cover;
+              border-radius: 1rem;
+            }
+          }
         }
       }
     }
@@ -124,4 +166,14 @@ ul {
 .footer {
   padding: 1rem 5rem;
   text-align: center;
+  background-color: rgb(28, 28, 28);
+  display: flex;
+  flex-direction: column;
+  color: white;
+
+  .footer--top {
+    border-bottom: 1px solid var(--gray);
+  }
+  .footer--bottom {
+  }
 }
