@@ -1,0 +1,36 @@
+.btn-white {
+  background-color: white;
+  border: none;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  height: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  /* extra */
+  margin: 0 14px;
+}
+
+.category-card--small {
+  height: 10rem;
+  width: 10rem;
+  border: 1px solid green;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  /* background-color: pink; */
+  justify-content: end;
+  background-size: cover;
+}
+
+.category-card--medium {
+  height: 15rem;
+  width: 10rem;
+  border: 1px solid green;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* background-color: blanchedalmond; */
+  justify-content: end;
+  background-size: cover;
+}

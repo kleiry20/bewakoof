@@ -10,16 +10,118 @@ p {
 a {
   text-decoration: none;
 }
+ul {
+  padding-inline-start: 0;
+}
 
-.section-1 {
+/* global custom styles */
+.h3-font-style {
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+}
+
+.p-12 {
+  font-size: 12px;
+  color: #4f5763;
+  font-weight: 400;
+}
+
+.p-14 {
+  font-size: 14px;
+  color: #4f5763;
+  font-weight: 400;
+}
+
+/* app section styles */
+.parent-container {
   display: flex;
   flex-direction: column;
-  padding: 1rem 5rem;
   justify-content: center;
   align-items: center;
 
-  .design {
-    text-transform: uppercase;
-    font-weight: 500;
+  .container {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+
+    .section-1 {
+      display: flex;
+      flex-direction: column;
+      /* padding: 1rem 5rem; */
+      justify-content: center;
+      align-items: center;
+    }
+
+    .section-2 {
+      display: flex;
+      flex-direction: column;
+      /* padding: 1rem 5rem; */
+      justify-content: center;
+      align-items: center;
+
+      .design--div {
+        display: flex;
+        flex-direction: column;
+
+        .design--heading {
+          text-transform: uppercase;
+          font-weight: 500;
+          text-align: center;
+        }
+
+        .design--wrapper {
+          display: flex;
+          border-radius: 2rem;
+        }
+      }
+    }
+
+    .section-3 {
+      /* padding: 1rem 5rem; */
+      text-align: center;
+
+      .category-wrapper {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid pink;
+        height: 46rem;
+        width: 80rem;
+        gap: 1rem;
+        justify-content: center;
+        margin: 1rem 0;
+
+        .category-wrapper--child {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+      }
+    }
+
+    .section-4 {
+      padding: 1rem 5rem;
+      text-align: center;
+      width: 100%;
+
+      .section-4--div {
+        display: flex;
+        justify-content: space-between;
+
+        .section-4--child {
+          height: 10rem;
+          width: 15rem;
+          border: 1px solid brown;
+        }
+      }
+    }
   }
+}
+
+.footer {
+  padding: 1rem 5rem;
+  text-align: center;
 }
