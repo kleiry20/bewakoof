@@ -17,6 +17,8 @@ import Coords from "./assets/co-ords.png";
 import FullSleeves from "./assets/full-sleeves.png";
 import Shorts from "./assets/shorts.png";
 import Joggers from "./assets/joggers.png";
+import FooterTop from "./components/Footer/FooterTop/FooterTop";
+import FooterBottom from "./components/Footer/FooterBottom/FooterBottom";
 
 function App() {
   const [isOffer] = useState(true);
@@ -223,9 +225,18 @@ function App() {
         </div>
       </div>
 
-      <section className="footer">
+      {/* <section className="footer">
         <section className="footer--top">top</section>
         <section className="footer--bottom">botto</section>
+      </section> */}
+
+      <section className="footer">
+        <section className="footer--top">
+          <FooterTop/>
+        </section>
+        <section className="footer--bottom">
+          <FooterBottom/>
+        </section>
       </section>
     </>
   );
