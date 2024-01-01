@@ -1,4 +1,6 @@
 .custom-carousel {
+  /* margin-left: 20px; */
+  
   .carousel-inner {
     border-radius: 1rem;
   }
@@ -11,4 +13,8 @@
     height: 5px;
     background-color: #495057;
   }
+}
+.caraousel-images {
+  height: 300px;
+  width: 78vw;
 }

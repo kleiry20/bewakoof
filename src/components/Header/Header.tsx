@@ -3,6 +3,8 @@ import SearchBar from "../SearchBar/SearchBar";
 
 import SideBar from "../SideBar/SideBar";
 
+import logo from "/src/assets/logo.svg";
+
 const Header = (props: any) => {
   return (
     <>
@@ -16,11 +18,7 @@ const Header = (props: any) => {
 
         <div className="navbar">
           <div className="navbar--left">
-            <img
-              src="https://images.bewakoof.com/web/ic-desktop-bwkf-trademark-logo.svg"
-              alt="bewakoof"
-              style={{ width: "10rem" }}
-            />
+            <img src={logo} alt="bewakoof" style={{ width: "10rem" }} />
             <a href="">Men</a>
             <a href="">Women</a>
             <a href="">Accessories</a>

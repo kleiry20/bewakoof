@@ -80,14 +80,14 @@ function App() {
       <Header isOffer={isOffer} />
 
       <div className="parent-container">
-        <div className="container">
+        <div className="content-container">
           <section className="section-1">
             <MiniCard />
             <CustomCarousel />
             <TrendCard />
           </section>
 
-          <section className="section-2">
+          <section className="section-2 w-78">
             <div className="design--div">
               <h4 className="design--heading">Design of the week</h4>
               <div className="design--wrapper mt-3">
@@ -121,9 +121,9 @@ function App() {
             </div>
           </section>
 
-          <section className="section-3 mt-5">
+          <section className="section-3 w-78 mt-5">
             <h4 className="h4-20">Trending Categories 🔥</h4>
-            <p className="p-16">
+            <p className="p-16 mb-4">
               Stay ahead of the fashion game with these hot trends to try!
             </p>
             <div className="category-wrapper mt-3 w-100">
@@ -157,7 +157,7 @@ function App() {
             </div>
           </section>
 
-          <section className="section-4 mt-5">
+          <section className="section-4 w-78 mt-5 mb-5">
             <h3 className="h4-20">Too hot to be missed</h3>
             <div className="section-4--div mt-3 row">
               <Col xs="12" md="6">
@@ -181,9 +181,9 @@ function App() {
             </div>
           </section>
 
-          <section className="section-5 mt-5">
+          <section className="section-5  w-78 mt-5 mb-5 ">
             <h3 className="h4-20">Categories to bag</h3>
-            <div className="section-5--wrapper mt-3">
+            <div className="section-5--wrapper mt-4">
               <div className="section-5--row mb-4">
                 {categories.list1.map((item) => {
                   return (
@@ -202,7 +202,7 @@ function App() {
                   );
                 })}
               </div>
-              <div className="section-5--row">
+              <div className="section-5--row mt-5 mb-5">
                 {categories.list2.map((item) => {
                   return (
                     <div className="section-5--child card-hover">

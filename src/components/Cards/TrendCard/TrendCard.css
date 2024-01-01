@@ -11,6 +11,7 @@
     display: flex;
     list-style-type: none;
     gap: 2rem;
+    padding-left: 0.8rem;
 
     .trendcard--bg {
       padding: 0.5rem 0.5rem 0.8rem 0.5rem;

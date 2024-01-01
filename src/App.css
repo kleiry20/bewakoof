@@ -66,6 +66,10 @@ ul {
   --yellow: #ffc303;
 }
 
+.w-78 {
+  width: 78vw;
+}
+
 /* app section styles */
 .parent-container {
   display: flex;
@@ -75,18 +79,17 @@ ul {
   /* remove later */
   margin-bottom: 40px;
 
-  .container {
-    /* width: 90vw;
+  .content-container {
+    width: 78vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid red; */
+    /* border: 1px solid red; */
 
     .section-1 {
       display: flex;
       flex-direction: column;
-      /* padding: 1rem 5rem; */
       justify-content: center;
       align-items: center;
     }
@@ -94,7 +97,6 @@ ul {
     .section-2 {
       display: flex;
       flex-direction: column;
-      /* padding: 1rem 5rem; */
       justify-content: center;
       align-items: center;
 
@@ -117,7 +119,6 @@ ul {
     }
 
     .section-3 {
-      /* padding: 1rem 5rem; */
       text-align: center;
 
       .category-wrapper {
@@ -135,9 +136,7 @@ ul {
     }
 
     .section-4 {
-      padding: 1rem 5rem;
       text-align: center;
-      width: 100%;
 
       .section-4--div {
         display: flex;
@@ -153,7 +152,6 @@ ul {
     }
 
     .section-5 {
-      padding: 1rem 5rem;
       text-align: center;
       width: 100%;
 
@@ -164,7 +162,7 @@ ul {
         .section-5--row {
           display: flex;
           justify-content: center;
-          gap: 1rem;
+          gap: 2rem;
 
           .section-5--child {
             height: 18rem;
@@ -172,10 +170,11 @@ ul {
             cursor: pointer;
 
             .section-5--img {
-              height: 16rem;
-              width: 16rem;
+              height: 19rem;
+              width: 17rem;
               background-size: cover;
-              border-radius: 1rem;
+              border-radius: 0.5rem;
+              outline: 1px solid #e5e5e5;
             }
           }
         }
@@ -185,41 +184,19 @@ ul {
 }
 
 .footer {
-  padding: 1rem 5rem;
+  padding: 5rem;
   text-align: center;
   background-color: rgb(28, 28, 28);
   display: flex;
   flex-direction: column;
   color: white;
+  margin-top: 5rem;
 
   .footer--top {
     border-bottom: 1px solid var(--gray);
   }
   .footer--bottom {
   }
-}
-
-.footer--div {
-  display: flex;
-
-  .footer--wrapper {
-    list-style-type: none;
-  }
-}
-
-.footer {
-  text-align: left;
-}
-
-.footer--wrapper a {
-  color: white !important;
-  text-decoration: auto;
-  font-size: 10px;
-}
-
-.caraousel-images {
-  height: 300px;
-  width: 75vw;
 }
 
 section.section-5.mt-5 ::-webkit-scrollbar {
@@ -237,7 +214,7 @@ section.section-5.mt-5 ::-webkit-scrollbar {
   .trendcard--div,
   .category-wrapper,
   .section-5--wrapper {
-    width: 100vw;
+    width: 78vw;
     overflow: hidden;
     overflow-x: scroll;
   }
@@ -268,6 +245,9 @@ section.section-5.mt-5 ::-webkit-scrollbar {
   }
   .footer {
     padding: 1rem;
+  }
+  .caraousel-images {
+    height: 300px !important;
   }
 }
 

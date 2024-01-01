@@ -33,8 +33,8 @@ const TrendCard = () => {
     },
   ];
   return (
-    <div className="trendcard--div mt-4 w-100">
-      <ul className="trendcard--wrapper pb-3">
+    <div className="trendcard--div mt-4">
+      <ul className="trendcard--wrapper pt-2 pb-3">
         {trendCardData.map((item) => {
           return (
             <li className="trendcard--bg card-hover">
