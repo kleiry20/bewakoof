@@ -32,6 +32,7 @@ import {
 } from "./components/Cards/CategoryCard/CategoryCard";
 import CustomCarousel from "./components/CustomCarousel/CustomCarousel";
 import { Col } from "react-bootstrap";
+import MobileFooter from "./components/Footer/MobileFooter/MobileFooter";
 
 function App() {
   const [isOffer] = useState(true);
@@ -222,21 +223,55 @@ function App() {
               </div>
             </div>
           </section>
+
+          <section className="extra-div mobile-view">
+            <button
+              className="btn-yellow"
+              style={{ textTransform: "uppercase", padding: "10px" }}
+            >
+              Explore more products
+            </button>
+            <ul className="more-info pt-4 pb-3 m-0 px-0 py-0">
+              <li className="more-info--child">
+                <i className="fa-regular fa-star"></i>
+                <p className="m-0">Quality</p> <p className="m-0">Assurance</p>
+              </li>
+              <li className="more-info--child">
+                <i className="fa-solid fa-cart-shopping"></i>{" "}
+                <p className="m-0">100% secure</p>
+                <p className="m-0">payment</p>
+              </li>
+              <li className="more-info--child">
+                <i className="fa-solid fa-earth-americas"></i>{" "}
+                <p className="m-0">Shipping</p>
+                <p className="m-0">globally</p>
+              </li>
+            </ul>
+          </section>
         </div>
       </div>
 
-      {/* <section className="footer">
-        <section className="footer--top">top</section>
-        <section className="footer--bottom">botto</section>
-      </section> */}
-
-      <section className="footer">
+      <section className="footer desktop-view">
         <section className="footer--top">
           <FooterTop />
         </section>
         <section className="footer--bottom">
           <FooterBottom />
         </section>
+      </section>
+
+      <section
+        style={{
+          position: "fixed",
+          bottom: 0,
+          width: "100%",
+          backgroundColor: "white",
+          borderTop: "1px solid #eaeaea",
+          boxShadow: "0px 0px 10px -1px #cbc5c5, 0px 4px 4px #888",
+        }}
+        className="footer mobile-view pt-2 mt-2"
+      >
+        <MobileFooter />
       </section>
     </>
   );

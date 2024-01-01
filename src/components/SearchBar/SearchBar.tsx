@@ -4,13 +4,6 @@ import { Form, InputGroup } from "react-bootstrap";
 const SearchBar = () => {
   return (
     <div>
-      {/* <i className="fas fa-heart"></i>
-      <input
-        className="search-bar"
-        type="text"
-        placeholder="Search by products"
-      /> */}
-
       <Form>
         <InputGroup className="search-bar">
           <InputGroup.Text id="basic-addon1">

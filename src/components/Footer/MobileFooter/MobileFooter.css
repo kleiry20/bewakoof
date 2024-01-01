@@ -1,0 +1,14 @@
+.mobile-footer {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  color: #6c757d;
+
+  .mobile-footer--child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+  }
+}

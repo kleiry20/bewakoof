@@ -6,7 +6,7 @@ import Apparel from "../../assets/apparel.jpg";
 
 const CustomCarousel = () => {
   return (
-    <Carousel className="custom-carousel" controls={false} interval={500000}>
+    <Carousel className="custom-carousel" controls={false} interval={2000}>
       <Carousel.Item>
         <img
           className="caraousel-images"
