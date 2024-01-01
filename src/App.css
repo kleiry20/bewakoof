@@ -141,12 +141,10 @@ ul {
 
       .section-4--div {
         display: flex;
-        gap: 1.3rem;
         justify-content: center;
 
         .section-4--child {
           height: 22rem;
-          width: 39rem;
           border-radius: 0.8rem;
           background-size: cover;
           cursor: pointer;
@@ -214,7 +212,7 @@ ul {
 }
 
 .footer--wrapper a {
-  color: white;
+  color: white !important;
   text-decoration: auto;
   font-size: 10px;
 }
@@ -224,10 +222,42 @@ ul {
   width: 75vw;
 }
 
+/* Mobile */
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .desktop-view {
     display: none !important;
+  }
+  .minicard--wrapper,
+  .trendcard--div,
+  .category-wrapper,
+  .section-5 {
+    width: 100vw;
+    overflow: hidden;
+    overflow-x: scroll;
+  }
+  .minicard--wrapper ::-webkit-scrollbar {
+    display: none !important;
+  }
+  .category-wrapper {
+    justify-content: initial !important;
+  }
+  .section-1,
+  .section-2,
+  .section-3,
+  .section-4,
+  .section-5 {
+    padding: 0 !important;
+  }
+  .section-4--child {
+    width: auto !important;
+  }
+  .section-4--div {
+    row-gap: 1rem;
+  }
+  .section-5--row {
+    justify-content: unset !important;
   }
 }
 

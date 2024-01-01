@@ -37,7 +37,7 @@ const TrendCard = () => {
     },
   ];
   return (
-    <div className="trendcard--div mt-4">
+    <div className="trendcard--div mt-4 w-100">
       <ul className="trendcard--wrapper">
         {trendCardData.map((item) => {
           return (

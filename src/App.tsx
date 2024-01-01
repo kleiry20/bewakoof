@@ -13,10 +13,7 @@ import FullSleeves from "./assets/full-sleeves.png";
 import Shorts from "./assets/shorts.png";
 import Joggers from "./assets/joggers.png";
 import Denim from "./assets/denim.jpg";
-import Denim2 from "./assets/denim2.jpg";
-import Shirt2 from "./assets/shirt2.jpg";
-import Ties from "./assets/ties.jpg";
-import Shoes from "./assets/shoes2.jpg";
+
 // assets - categories
 import Pearls from "./assets/categories/pearls.jpg";
 import Red from "./assets/categories/red.jpg";
@@ -34,6 +31,7 @@ import {
   CategoryCardSmall,
 } from "./components/Cards/CategoryCard/CategoryCard";
 import CustomCarousel from "./components/CustomCarousel/CustomCarousel";
+import { Col } from "react-bootstrap";
 
 function App() {
   const [isOffer] = useState(true);
@@ -93,30 +91,32 @@ function App() {
             <div className="design--div">
               <h4 className="design--heading">Design of the week</h4>
               <div className="design--wrapper mt-3">
-                <a href="">
-                  <img
-                    src="https://images.bewakoof.com/uploads/grid/app/DOTW-Split-banner-Desktop-Men-1703576682.jpg"
-                    alt="shop men"
-                    style={{
-                      borderTopLeftRadius: "2rem",
-                      borderBottomLeftRadius: "2rem",
-                      width: "34rem",
-                      height: "22rem",
-                    }}
-                  />
-                </a>
-                <a href="">
-                  <img
-                    src="https://images.bewakoof.com/uploads/grid/app/DOTW-Split-banner-Desktop-Women-1703576683.jpg"
-                    alt="shop women"
-                    style={{
-                      borderTopRightRadius: "2rem",
-                      borderBottomRightRadius: "2rem",
-                      width: "34rem",
-                      height: "22rem",
-                    }}
-                  />
-                </a>
+                <Col xs="6" md="6" className="p-0 m-0">
+                  <a href="" className="w-100">
+                    <img
+                      src="https://images.bewakoof.com/uploads/grid/app/DOTW-Split-banner-Desktop-Men-1703576682.jpg"
+                      alt="shop men"
+                      style={{
+                        borderTopLeftRadius: "2rem",
+                        borderBottomLeftRadius: "2rem",
+                      }}
+                      className="w-100"
+                    />
+                  </a>
+                </Col>
+                <Col xs="6" md="6" className="p-0 m-0">
+                  <a href="" className="w-100">
+                    <img
+                      src="https://images.bewakoof.com/uploads/grid/app/DOTW-Split-banner-Desktop-Women-1703576683.jpg"
+                      alt="shop women"
+                      style={{
+                        borderTopRightRadius: "2rem",
+                        borderBottomRightRadius: "2rem",
+                      }}
+                      className="w-100"
+                    />
+                  </a>
+                </Col>
               </div>
             </div>
           </section>
@@ -126,7 +126,7 @@ function App() {
             <p className="p-16">
               Stay ahead of the fashion game with these hot trends to try!
             </p>
-            <div className="category-wrapper mt-3">
+            <div className="category-wrapper mt-3 w-100">
               <div className="category-wrapper--child">
                 <div>
                   <CategoryCardMedium image={Denim} title="Denim" />
@@ -159,21 +159,25 @@ function App() {
 
           <section className="section-4 mt-5">
             <h3 className="h4-20">Too hot to be missed</h3>
-            <div className="section-4--div mt-3">
-              <div
-                className="section-4--child card-hover"
-                style={{
-                  backgroundImage:
-                    'url("https://images.bewakoof.com/uploads/grid/app/Customise-Desktop-midsize-Banner-1699360277.jpg")',
-                }}
-              ></div>
-              <div
-                className="section-4--child card-hover"
-                style={{
-                  backgroundImage:
-                    'url("https://images.bewakoof.com/uploads/grid/app/Plus-Size-Desktop-midsize-Banner--1--1699360278.jpg")',
-                }}
-              ></div>
+            <div className="section-4--div mt-3 row">
+              <Col xs="12" md="6">
+                <div
+                  className="section-4--child card-hover"
+                  style={{
+                    backgroundImage:
+                      'url("https://images.bewakoof.com/uploads/grid/app/Customise-Desktop-midsize-Banner-1699360277.jpg")',
+                  }}
+                ></div>
+              </Col>
+              <Col xs="12" md="6">
+                <div
+                  className="section-4--child card-hover"
+                  style={{
+                    backgroundImage:
+                      'url("https://images.bewakoof.com/uploads/grid/app/Plus-Size-Desktop-midsize-Banner--1--1699360278.jpg")',
+                  }}
+                ></div>
+              </Col>
             </div>
           </section>
 

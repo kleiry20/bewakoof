@@ -52,7 +52,7 @@ const MiniCard = () => {
   ];
   return (
     <>
-      <div className="minicard--div">
+      <div className="minicard--div w-100">
         <ul className="minicard--wrapper">
           {miniCardTitle.map((item) => {
             return (
