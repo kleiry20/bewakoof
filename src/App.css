@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500&display=swap");
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif !important;
   margin: 0;
   padding: 0;
 }
@@ -9,7 +9,7 @@ p {
   margin: 0;
 }
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 ul {
   padding-inline-start: 0;
@@ -21,17 +21,41 @@ ul {
   font-weight: 500;
   text-align: center;
 }
+.h4-20 {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+}
 
-.p-12 {
-  font-size: 12px;
-  color: #4f5763;
+.p-14-custom {
+  font-size: 14px;
+  color: black;
   font-weight: 400;
+  text-align: left;
+  margin-left: 40px;
 }
 
 .p-14 {
   font-size: 14px;
   color: #4f5763;
   font-weight: 400;
+}
+
+.p-16 {
+  font-size: 16px;
+  color: #4f5763;
+  font-weight: 400;
+  margin: 0;
+}
+
+.card-hover {
+  /* hover effect */
+  transition: 1s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+    1s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+}
+.card-hover:hover {
+  transform: scale(1.05);
 }
 
 /* global colors */
@@ -50,12 +74,12 @@ ul {
   margin-bottom: 40px;
 
   .container {
-    width: 90vw;
+    /* width: 90vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
+    border: 1px solid red; */
 
     .section-1 {
       display: flex;
@@ -80,6 +104,7 @@ ul {
           text-transform: uppercase;
           font-weight: 500;
           text-align: center;
+          font-size: 1.2rem;
         }
 
         .design--wrapper {
@@ -96,17 +121,13 @@ ul {
       .category-wrapper {
         display: flex;
         justify-content: space-between;
-        border: 1px solid pink;
-        height: 46rem;
-        width: 80rem;
-        gap: 1rem;
+        gap: 2rem;
         justify-content: center;
-        margin: 1rem 0;
 
         .category-wrapper--child {
           display: flex;
           flex-direction: column;
-          justify-content: space-between;
+          row-gap: inherit;
         }
       }
     }
@@ -118,13 +139,13 @@ ul {
 
       .section-4--div {
         display: flex;
-        gap: 1rem;
+        gap: 1.3rem;
         justify-content: center;
+
         .section-4--child {
           height: 22rem;
           width: 39rem;
           border-radius: 0.8rem;
-          /* border: 1px solid brown; */
           background-size: cover;
           cursor: pointer;
         }
@@ -176,4 +197,27 @@ ul {
   }
   .footer--bottom {
   }
+}
+
+.footer--div {
+  display: flex;
+
+  .footer--wrapper {
+    list-style-type: none;
+  }
+}
+
+.footer {
+  text-align: left;
+}
+
+.footer--wrapper a {
+  color: white;
+  text-decoration: auto;
+  font-size: 10px;
+}
+
+.caraousel-images {
+  height: 300px;
+  width: 75vw;
 }

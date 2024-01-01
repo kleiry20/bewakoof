@@ -1,12 +1,7 @@
 import { useState } from "react";
 import "./App.css";
-import Header from "./components/Header/Header";
-import MiniCard from "./components/Cards/MiniCard/MiniCard";
-import TrendCard from "./components/Cards/TrendCard/TrendCard";
-import CategoryCard, {
-  CategoryCardMedium,
-  CategoryCardSmall,
-} from "./components/Cards/CategoryCard/CategoryCard";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "font-awesome/css/font-awesome.min.css";
 
 // assets
 import TeeShirt from "/src/assets/tee-shirts.png";
@@ -17,42 +12,31 @@ import Coords from "./assets/co-ords.png";
 import FullSleeves from "./assets/full-sleeves.png";
 import Shorts from "./assets/shorts.png";
 import Joggers from "./assets/joggers.png";
+import Denim from "./assets/denim.jpg";
+import Denim2 from "./assets/denim2.jpg";
+import Shirt2 from "./assets/shirt2.jpg";
+import Ties from "./assets/ties.jpg";
+import Shoes from "./assets/shoes2.jpg";
+// assets - categories
+import Pearls from "./assets/categories/pearls.jpg";
+import Red from "./assets/categories/red.jpg";
+import Minty from "./assets/categories/minty.jpg";
+import Knit from "./assets/categories/knit pullovers.jpg";
+import Velvet from "./assets/categories/velvet rich.jpg";
+
 import FooterTop from "./components/Footer/FooterTop/FooterTop";
 import FooterBottom from "./components/Footer/FooterBottom/FooterBottom";
+import Header from "./components/Header/Header";
+import MiniCard from "./components/Cards/MiniCard/MiniCard";
+import TrendCard from "./components/Cards/TrendCard/TrendCard";
+import {
+  CategoryCardMedium,
+  CategoryCardSmall,
+} from "./components/Cards/CategoryCard/CategoryCard";
+import CustomCarousel from "./components/CustomCarousel/CustomCarousel";
 
 function App() {
   const [isOffer] = useState(true);
-
-  const smallCardData = [
-    {
-      image: TeeShirt,
-      title: "Jackets",
-    },
-    {
-      image: "",
-      title: "Pastel Stories",
-    },
-    {
-      image: "",
-      title: "Striped Shirts",
-    },
-  ];
-
-  const mediumCardData = [
-    {
-      image: "",
-      title: "Colour Splash",
-    },
-    {
-      image: "",
-      title: "Printed Sweatshirt",
-    },
-    {
-      image:
-        "https://images.bewakoof.com/t640/men-s-black-hope-t-shirt-300994-1655813841-1.jpg",
-      title: "Tee Shirts",
-    },
-  ];
 
   const categories = {
     list1: [
@@ -101,13 +85,14 @@ function App() {
         <div className="container">
           <section className="section-1">
             <MiniCard />
+            <CustomCarousel />
             <TrendCard />
           </section>
 
           <section className="section-2">
             <div className="design--div">
-              <h3 className="design--heading">Design of the week</h3>
-              <div className="design--wrapper">
+              <h4 className="design--heading">Design of the week</h4>
+              <div className="design--wrapper mt-3">
                 <a href="">
                   <img
                     src="https://images.bewakoof.com/uploads/grid/app/DOTW-Split-banner-Desktop-Men-1703576682.jpg"
@@ -115,6 +100,8 @@ function App() {
                     style={{
                       borderTopLeftRadius: "2rem",
                       borderBottomLeftRadius: "2rem",
+                      width: "34rem",
+                      height: "22rem",
                     }}
                   />
                 </a>
@@ -125,6 +112,8 @@ function App() {
                     style={{
                       borderTopRightRadius: "2rem",
                       borderBottomRightRadius: "2rem",
+                      width: "34rem",
+                      height: "22rem",
                     }}
                   />
                 </a>
@@ -132,53 +121,54 @@ function App() {
             </div>
           </section>
 
-          <section className="section-3">
-            <h3 className="h3-font-style">Trending Categories 🔥</h3>
-            <p className="p-14">
+          <section className="section-3 mt-5">
+            <h4 className="h4-20">Trending Categories 🔥</h4>
+            <p className="p-16">
               Stay ahead of the fashion game with these hot trends to try!
             </p>
-            <div className="category-wrapper">
+            <div className="category-wrapper mt-3">
               <div className="category-wrapper--child">
                 <div>
-                  <CategoryCardMedium />
+                  <CategoryCardMedium image={Denim} title="Denim" />
                 </div>
                 <div>
-                  <CategoryCardSmall smallCardData={smallCardData} />
-                  {/* <CategoryCardSmall smallCardData={smallCardData} /> */}
-                </div>
-              </div>
-              {/* <div className="category-wrapper--child">
-                <div>
-                  <CategoryCardSmall smallCardData={smallCardData} />
-                </div>
-                <div>
-                  <CategoryCardMedium />
+                  <CategoryCardSmall
+                    image={Pearls}
+                    title="Pearls"
+                  ></CategoryCardSmall>
                 </div>
               </div>
               <div className="category-wrapper--child">
                 <div>
-                  <CategoryCardMedium />
+                  <CategoryCardSmall image={Knit} title="Knit" />
                 </div>
                 <div>
-                  <CategoryCardSmall smallCardData={smallCardData} />
+                  <CategoryCardMedium image={Velvet} title="Velvet" />
                 </div>
-              </div> */}
+              </div>
+              <div className="category-wrapper--child">
+                <div>
+                  <CategoryCardMedium image={Red} title="Classic" />
+                </div>
+                <div>
+                  <CategoryCardSmall image={Minty} title="Mint" />
+                </div>
+              </div>
             </div>
-            {/* <CategoryCard /> */}
           </section>
 
-          <section className="section-4">
-            <h3 className="h3-font-style">Too hot to be missed</h3>
-            <div className="section-4--div">
+          <section className="section-4 mt-5">
+            <h3 className="h4-20">Too hot to be missed</h3>
+            <div className="section-4--div mt-3">
               <div
-                className="section-4--child"
+                className="section-4--child card-hover"
                 style={{
                   backgroundImage:
                     'url("https://images.bewakoof.com/uploads/grid/app/Customise-Desktop-midsize-Banner-1699360277.jpg")',
                 }}
               ></div>
               <div
-                className="section-4--child"
+                className="section-4--child card-hover"
                 style={{
                   backgroundImage:
                     'url("https://images.bewakoof.com/uploads/grid/app/Plus-Size-Desktop-midsize-Banner--1--1699360278.jpg")',
@@ -187,18 +177,21 @@ function App() {
             </div>
           </section>
 
-          <section className="section-5">
-            <h3 className="h3-font-style">Categories to bag</h3>
-            <div className="section-5--wrapper">
-              <div className="section-5--row">
+          <section className="section-5 mt-5">
+            <h3 className="h4-20">Categories to bag</h3>
+            <div className="section-5--wrapper mt-3">
+              <div className="section-5--row mb-4">
                 {categories.list1.map((item) => {
                   return (
-                    <div className="section-5--child">
+                    <div className="section-5--child card-hover">
                       <div
                         className="section-5--img"
                         style={{ backgroundImage: `url("${item.image}")` }}
                       ></div>
-                      <p className="p-12" style={{ marginTop: "0.4rem" }}>
+                      <p
+                        className="p-14-custom"
+                        style={{ marginTop: "0.4rem" }}
+                      >
                         {item.type}
                       </p>
                     </div>
@@ -208,12 +201,15 @@ function App() {
               <div className="section-5--row">
                 {categories.list2.map((item) => {
                   return (
-                    <div className="section-5--child">
+                    <div className="section-5--child card-hover">
                       <div
                         className="section-5--img"
                         style={{ backgroundImage: `url("${item.image}")` }}
                       ></div>
-                      <p className="p-12" style={{ marginTop: "0.4rem" }}>
+                      <p
+                        className="p-14-custom"
+                        style={{ marginTop: "0.4rem" }}
+                      >
                         {item.type}
                       </p>
                     </div>
@@ -232,10 +228,10 @@ function App() {
 
       <section className="footer">
         <section className="footer--top">
-          <FooterTop/>
+          <FooterTop />
         </section>
         <section className="footer--bottom">
-          <FooterBottom/>
+          <FooterBottom />
         </section>
       </section>
     </>

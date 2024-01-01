@@ -8,12 +8,13 @@
     display: flex;
     justify-content: center;
     background-color: #ffc303;
-    padding: 0.6rem 0;
-    /* height: 2rem; */
+    padding: 1.3rem 0;
+    height: 2.8rem;
 
     .offer-text {
       display: flex;
       align-items: center;
+      font-size: 14px;
     }
   }
   .navbar {
@@ -30,6 +31,13 @@
     .navbar--right {
       display: flex;
       gap: 2rem;
+      align-items: center;
     }
   }
+}
+.navbar--left a {
+  color: black;
+}
+.navbar--right a {
+  color: black;
 }

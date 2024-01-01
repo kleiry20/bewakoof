@@ -7,10 +7,11 @@
     display: flex;
     list-style-type: none;
     gap: 2rem;
+    margin: 2rem;
 
     .minicard {
       height: 5.55rem;
-      width: 5.35rem;
+      width: 6rem;
       border-radius: 0.8rem;
       cursor: pointer;
     }

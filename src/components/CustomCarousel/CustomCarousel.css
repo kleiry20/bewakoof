@@ -1,0 +1,14 @@
+.custom-carousel {
+  .carousel-inner {
+    border-radius: 1rem;
+  }
+  .carousel-indicators {
+    bottom: -40px;
+  }
+  .carousel-indicators [data-bs-target] {
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    background-color: #495057;
+  }
+}

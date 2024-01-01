@@ -1,33 +1,66 @@
 import React from "react";
 import "./MiniCard.css";
+import LiveNow from "../../../assets/joggers.png";
+import Pajamas from "../../../assets/pajamas.png";
+import Boxers from "../../../assets/boxers.png";
+import NewArrival from "../../../assets/new-arrival.png";
+import Coords from "../../../assets/co-ords.png";
+import Shorts from "../../../assets/shorts.png";
+import Joggers from "../../../assets/joggers.png";
+import Shirts from "../../../assets/shirts.png";
+import Oversized from "../../../assets/oversized.png";
+import Tops from "../../../assets/fashion-tops.png";
 
 const MiniCard = () => {
   const miniCardTitle = [
-    "Live Now",
-    "Men",
-    "Women",
-    "Accessories",
-    "Plus Size",
-    "Customization",
-    "Play",
-    "Undrdawg",
-    "Teens",
+    {
+      image: LiveNow,
+      title: "Live Now",
+    },
+    {
+      image: Shirts,
+      title: "Men",
+    },
+    {
+      image: Tops,
+      title: "Women",
+    },
+    {
+      image: Shorts,
+      title: "Accessories",
+    },
+    {
+      image: Pajamas,
+      title: "Plus Size",
+    },
+    {
+      image: Oversized,
+      title: "Customization",
+    },
+    {
+      image: Joggers,
+      title: "Play",
+    },
+    {
+      image: Coords,
+      title: "Undrdawg",
+    },
+    {
+      image: Boxers,
+      title: "Teens",
+    },
   ];
   return (
     <>
       <div className="minicard--div">
         <ul className="minicard--wrapper">
-          {miniCardTitle.map((title) => {
+          {miniCardTitle.map((item) => {
             return (
               <li style={{ textAlign: "center" }}>
-                <div className="minicard">
-                  <img
-                    src="https://images.bewakoof.com/uploads/grid/app/category-icon-for-Desktop-Winterwear-1698217139.jpg"
-                    alt=""
-                    className="minicard"
-                  />
+                <div className="minicard card-hover">
+                  <img src={item.image} alt="" className="minicard" />
                 </div>
-                <a className="minicard-font">{title}</a>
+                <a className="minicard-font">{item.title}</a>
               </li>
             );
           })}

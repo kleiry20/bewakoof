@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Header.css";
+import SearchBar from "../SearchBar/SearchBar";
 
 const Header = (props: any) => {
   return (
@@ -23,10 +24,21 @@ const Header = (props: any) => {
         </div>
 
         <div className="navbar--right">
-          <div>search bar</div>
-          <a href="">Account</a>
-          <a href="">Wishlist</a>
-          <a href="">Cart</a>
+          <div>
+            <SearchBar />{" "}
+          </div>
+          <a href="">
+            {" "}
+            <i className="fas fa-user"></i> Account
+          </a>
+          <a href="">
+            {" "}
+            <i className="fas fa-heart"></i> Wishlist
+          </a>
+          <a href="">
+            {" "}
+            <i className="fas fa-bag-shopping"></i> Cart
+          </a>
         </div>
       </div>
     </header>
