@@ -1,4 +1,3 @@
-import React from "react";
 import "./SearchBar.css";
 import { Form, InputGroup } from "react-bootstrap";
 
