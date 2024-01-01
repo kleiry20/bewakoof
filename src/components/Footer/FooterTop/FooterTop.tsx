@@ -1,5 +1,3 @@
-import React from "react";
-
 const FooterTop = () => {
   return (
     <div className="section-5--wrapper">

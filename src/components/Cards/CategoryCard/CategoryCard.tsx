@@ -1,4 +1,3 @@
-import React from "react";
 import "./CategoryCard.css";
 
 type CategoryCard = {
@@ -32,12 +31,7 @@ export const CategoryCardMedium = (props: any) => {
   );
 };
 
-const CategoryCard = ({
-  isCategoryCardSmall,
-  isCategoryCardMedium,
-  smallCardData,
-  mediumCardData,
-}: CategoryCard) => {
+const CategoryCard = ({ smallCardData, mediumCardData }: CategoryCard) => {
   return (
     <div>
       <CategoryCardSmall smallCardData={smallCardData} />

@@ -1,9 +1,7 @@
-import React from "react";
 import "./MiniCard.css";
 import LiveNow from "../../../assets/joggers.png";
 import Pajamas from "../../../assets/pajamas.png";
 import Boxers from "../../../assets/boxers.png";
-import NewArrival from "../../../assets/new-arrival.png";
 import Coords from "../../../assets/co-ords.png";
 import Shorts from "../../../assets/shorts.png";
 import Joggers from "../../../assets/joggers.png";

@@ -1,14 +1,6 @@
-import React, { useState } from "react";
 import "./Header.css";
 import SearchBar from "../SearchBar/SearchBar";
-import {
-  Button,
-  Container,
-  Form,
-  Nav,
-  NavDropdown,
-  Navbar,
-} from "react-bootstrap";
+
 import SideBar from "../SideBar/SideBar";
 
 const Header = (props: any) => {

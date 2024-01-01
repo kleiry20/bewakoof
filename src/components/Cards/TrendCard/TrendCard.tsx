@@ -1,15 +1,14 @@
-import React from "react";
 import "./TrendCard.css";
 
 const TrendCard = () => {
-  const trendCardTitle = [
-    "New Arrivals",
-    "Best Sellers",
-    "Official Collaboration",
-    "Vote for Design",
-    "Last Size Left",
-    "Plus Size",
-  ];
+  // const trendCardTitle = [
+  //   "New Arrivals",
+  //   "Best Sellers",
+  //   "Official Collaboration",
+  //   "Vote for Design",
+  //   "Last Size Left",
+  //   "Plus Size",
+  // ];
   const trendCardData = [
     {
       pic: "/src/assets/new-arrival.png",

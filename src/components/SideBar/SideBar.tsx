@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { Container, Nav, Navbar } from "react-bootstrap";
-import Button from "react-bootstrap/Button";
+import {  Nav, Navbar } from "react-bootstrap";
 import Offcanvas from "react-bootstrap/Offcanvas";
 
 function SideBar() {
