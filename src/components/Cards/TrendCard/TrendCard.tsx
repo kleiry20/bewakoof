@@ -1,33 +1,30 @@
 import "./TrendCard.css";
+import NewArrivals from "../../../assets/new-arrival.png";
+import BestSellers from "../../../assets/best-sellers.png";
+import OfficialCollaboration from "../../../assets/official-collaboration.png";
+import VoteForDesign from "../../../assets/vote-for-design.png";
+import LastSizeLeft from "../../../assets/last-size.png";
 
 const TrendCard = () => {
-  // const trendCardTitle = [
-  //   "New Arrivals",
-  //   "Best Sellers",
-  //   "Official Collaboration",
-  //   "Vote for Design",
-  //   "Last Size Left",
-  //   "Plus Size",
-  // ];
   const trendCardData = [
     {
-      pic: "/src/assets/new-arrival.png",
+      pic: NewArrivals,
       title: "New Arrivals",
     },
     {
-      pic: "/src/assets/best-sellers.png",
+      pic: BestSellers,
       title: "Best Sellers",
     },
     {
-      pic: "/src/assets/official-collaboration.png",
+      pic: OfficialCollaboration,
       title: "Official Collaboration",
     },
     {
-      pic: "/src/assets/vote-for-design.png",
+      pic: VoteForDesign,
       title: "Vote for Design",
     },
     {
-      pic: "/src/assets/last-size.png",
+      pic: LastSizeLeft,
       title: "Last Size Left",
     },
     {
@@ -37,7 +34,7 @@ const TrendCard = () => {
   ];
   return (
     <div className="trendcard--div mt-4 w-100">
-      <ul className="trendcard--wrapper">
+      <ul className="trendcard--wrapper pb-3">
         {trendCardData.map((item) => {
           return (
             <li className="trendcard--bg card-hover">

@@ -222,6 +222,10 @@ ul {
   width: 75vw;
 }
 
+section.section-5.mt-5 ::-webkit-scrollbar {
+  display: none !important;
+}
+
 /* Mobile */
 
 /* Extra small devices (phones, 600px and down) */
@@ -232,12 +236,15 @@ ul {
   .minicard--wrapper,
   .trendcard--div,
   .category-wrapper,
-  .section-5 {
+  .section-5--wrapper {
     width: 100vw;
     overflow: hidden;
     overflow-x: scroll;
   }
-  .minicard--wrapper ::-webkit-scrollbar {
+  .minicard--div ::-webkit-scrollbar,
+  .category-wrapper ::-webkit-scrollbar,
+  .section-5--wrapper ::-webkit-scrollbar,
+  .section-3 ::-webkit-scrollbar {
     display: none !important;
   }
   .category-wrapper {
@@ -258,6 +265,9 @@ ul {
   }
   .section-5--row {
     justify-content: unset !important;
+  }
+  .footer {
+    padding: 1rem;
   }
 }
 

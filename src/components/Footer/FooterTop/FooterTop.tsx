@@ -7,7 +7,7 @@ const FooterTop = () => {
             <div className="col-sm-6 col-md-3">
               <span className="footerTitle">About Bewakoof</span>
               <br />
-              <br />
+              <br className="desktop-view" />
               <div className="footer--div">
                 <ul className="footer--wrapper p-0">
                   <li>
@@ -34,7 +34,7 @@ const FooterTop = () => {
             <div className="col-sm-6 col-md-3 noPdSm footerMenuSec">
               <span className="footerTitle">CUSTOMER SERVICE</span>
               <br />
-              <br />
+              <br className="desktop-view" />
               <div className="footer--div">
                 <ul className="footer--wrapper p-0">
                   <li>
@@ -61,7 +61,7 @@ const FooterTop = () => {
             <div className="col-sm-6 col-md-3 noPdSm footerMenuSec">
               <span className="footerTitle">Quick Links</span>
               <br />
-              <br />
+              <br className="desktop-view" />
               <div className="footer--div">
                 <ul className="footer--wrapper p-0">
                   <li>
