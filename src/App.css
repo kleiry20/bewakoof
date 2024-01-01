@@ -9,6 +9,7 @@ p {
   margin: 0;
 }
 a {
+  color: black !important;
   text-decoration: none !important;
 }
 ul {
@@ -62,6 +63,7 @@ ul {
 :root {
   --blue: rgb(232, 243, 243);
   --gray: rgb(73, 75, 80);
+  --yellow: #ffc303;
 }
 
 /* app section styles */
@@ -220,4 +222,33 @@ ul {
 .caraousel-images {
   height: 300px;
   width: 75vw;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .desktop-view {
+    display: none !important;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  /* .desktop-view {
+    display: none !important;
+  } */
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .mobile-view {
+    display: none !important;
+  }
 }
