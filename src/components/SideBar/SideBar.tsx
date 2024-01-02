@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Nav, Navbar } from "react-bootstrap";
+import { Navbar } from "react-bootstrap";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import logo from "/src/assets/logo.svg";
 
