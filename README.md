@@ -1,30 +1,45 @@
-# React + TypeScript + Vite
+### Overview
+This project is a front-end assignment aiming to replicate the UI/UX of Bewakoof.com. It is developed using React, TypeScript, and Vite, with the later addition of Bootstrap for responsiveness. 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+It showcases the use of appropriate HTML tags, along with pure CSS and flexbox skills, to achieve a visually appealing and responsive user interface. The project was initiated using Vite's React TypeScript template, providing a modern development environment. The images are sourced from Bewakoof.com and pexels.com
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Features
+1. **Responsive Design:** The application is designed to be responsive, providing an optimal viewing experience across a wide range of devices.
+2. **TypeScript:** Written in TypeScript to enhance code maintainability and catch potential issues during development.
+3. **Vite Development:** Utilizes Vite for a fast and efficient development experience, with hot module replacement and optimized builds.
+4. **Bootstrap Integration:** Bootstrap is added later in the project to enhance the responsiveness of components.
+5. **Web and Mobile UI Clone:** Mimics the user interface of Bewakoof.com for both web and mobile platforms.
+6. **HTML Tags:** Appropriate use of HTML tags for semantic structure and accessibility.
+7. **Pure CSS and Flexbox:** Demonstrates the use of pure CSS and flexbox skills for layout, alignment, transitions, and styling.
 
-## Expanding the ESLint configuration
+### Setup
+#### Clone the repo:
+`git clone https://github.com/kleiry20/bewakoof.git`
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+#### Install Dependencies:
+`cd react-ts-bootstrap-clone`
 
-- Configure the top-level `parserOptions` property like this:
+`npm install`
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+#### Run the Application:
+`npm run dev`
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+The application shall be accessible at http://localhost:5173
+
+### Folder Structure
+- src/: Contains the source code of the React TypeScript application.
+- public/: Holds static assets and the HTML template.
+
+### Technologies Used
+- React
+- TypeScript
+- Vite
+- Bootstrap
+
+### Deployment
+This project is deployed using Vercel. You can access the live application at the following URL:
+
+[Live Demo](bewakoof-iat3.vercel.app/)
+
+Feel free to explore the application and provide any feedback or suggestions.
