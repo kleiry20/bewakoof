@@ -18,7 +18,7 @@ It showcases the use of appropriate HTML tags, along with pure CSS and flexbox s
 `git clone https://github.com/kleiry20/bewakoof.git`
 
 #### Install Dependencies:
-`cd react-ts-bootstrap-clone`
+`cd bewakoof`
 
 `npm install`
 
