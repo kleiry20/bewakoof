@@ -40,6 +40,6 @@ The application shall be accessible at http://localhost:5173
 ### Deployment
 This project is deployed using Vercel. You can access the live application at the following URL:
 
-[Live Demo](bewakoof-iat3.vercel.app/)
+[Live Demo](https://bewakoof-iat3.vercel.app/)
 
 Feel free to explore the application and provide any feedback or suggestions.
