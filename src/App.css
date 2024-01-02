@@ -74,6 +74,10 @@ ul {
   --yellow: #ffc303;
 }
 
+.offcanvas {
+  background-color: #ffc303 !important;
+}
+
 .w-78 {
   width: 78vw;
 }
@@ -246,9 +250,10 @@ section.section-5.mt-5 ::-webkit-scrollbar {
   .trendcard--div,
   .category-wrapper,
   .section-5--wrapper {
-    width: 78vw;
+    width: 95vw;
     overflow: hidden;
     overflow-x: scroll;
+    margin: 1rem auto !important;
   }
   .minicard--div ::-webkit-scrollbar,
   .category-wrapper ::-webkit-scrollbar,
@@ -280,6 +285,9 @@ section.section-5.mt-5 ::-webkit-scrollbar {
   }
   .caraousel-images {
     height: 300px !important;
+  }
+  .w-78 {
+    width: 95vw !important;
   }
 }
 

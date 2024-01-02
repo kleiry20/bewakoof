@@ -1,6 +1,9 @@
 import { useState } from "react";
-import {  Nav, Navbar } from "react-bootstrap";
+import { Nav, Navbar } from "react-bootstrap";
 import Offcanvas from "react-bootstrap/Offcanvas";
+import logo from "/src/assets/logo.svg";
+
+import "./SideBar.css";
 
 function SideBar() {
   const [show, setShow] = useState(false);
@@ -63,14 +66,16 @@ function SideBar() {
 
       <Offcanvas className="only-mobile" show={show} onHide={handleClose}>
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+          <Offcanvas.Title>
+            <img src={logo} alt="bewakoof" style={{ width: "10rem" }} />
+          </Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Link</Nav.Link>
-            <Nav.Link href="#pricing">Actions</Nav.Link>
-          </Nav>
+          <ul className="sidebar">
+            <li>Men</li>
+            <li>Women</li>
+            <li>Accessories</li>
+          </ul>
         </Offcanvas.Body>
       </Offcanvas>
     </>
